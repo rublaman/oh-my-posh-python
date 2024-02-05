@@ -5,6 +5,17 @@
       "alignment": "left",
       "segments": [
         {
+          "foreground": "#FFE873",
+          "style": "diamond",
+          "properties": {
+            "fetch_virtual_env": true,
+            "display_mode": "environment",
+            "home_enabled": true
+          },
+          "template": "(\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}) ",
+          "type": "python"
+        },
+        {
           "background": "#1478DB",
           "foreground": "#000000",
           "leading_diamond": "\ue0b6",
